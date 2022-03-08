@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
-    <script src="https://kit.fontawesome.com/7565f2e855.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/adicional.css">
+    <link rel="stylesheet" href="./styles/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./styles/owl/owl.theme.default.min.css">
     <title>Clone - Netflix</title>
 </head>
+
 <body>
     <!--Parte 4-->
     <header>
@@ -27,14 +30,15 @@
             <div class="container">
                 <h3 class="titulo">HOUSE OF CARDS</h3>
                 <p class="descricao">
-                    Nada pode impedir o político sem escrúpulos Frank Underwood de conquistar Washington. Assista agora a nova temporada de House of Cards que está imperdível.
+                    Nada pode impedir o político sem escrúpulos Frank Underwood de conquistar Washington. Assista agora
+                    a nova temporada de House of Cards que está imperdível.
                 </p>
                 <div class="botoes">
-                    <button role="button" class="botao">
+                    <button role="button" class="botao" onclick="alert('Não implementado :)')">
                         <i class="fa fa-play" aria-hidden="true"></i>
                         ASSISTIR AGORA
                     </button>
-                    <button role="button" class="botao">
+                    <button role="button" class="botao" onclick="alert('Não implementado :)')">
                         <i class="fa fa-info-circle" aria-hidden="true"></i>
                         MAIS INFORMAÇÕES
                     </button>
@@ -42,5 +46,166 @@
             </div>
         </div>
     </main>
+
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="./img/min01.jpg" alt="Série: Lúcifer">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/min02.jpg" alt="Filme: Mercenários 2">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/min03.jpg" alt="Filme: Homem-aranha">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/min04.jpg" alt="Filme: Naquele fim de semana">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/min05.jpg" alt="Série: Peaky Blinders">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/min06.jpg" alt="Filme: Um dia difícil">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/min07.jpg" alt="Filme: Sing 2">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/min08.jpg" alt="Filme: Matrix">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/min09.jpg" alt="Filme: Hunter">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="./img/min10.jpg" alt="Filme: O poderoso chefinho 2">
+            </div>
+        </div>
+    </div>
+
+    <section class="perguntas">
+        <div class="container">
+            <h3 class="titulo_section">Perguntas frequentes</h3>
+            <div class="perguntas_section">
+                <button onclick="ocultar('texto_01')">
+                    O que é Netflix?
+                    <span> + </span>
+                </button>
+                <div class="texto_btn" id="texto_01">
+                    <p>A Netflix é um serviço de transmissão online que oferece uma ampla variedade de séries, filmes e
+                        documentários premiados em milhares de aparelhos conectados à internet.</p>
+                    <br>
+                    <p>Você pode assistir a quantos filmes e séries quiser, quando e onde quiser, sem comerciais – tudo
+                        por um preço mensal bem acessível. Aqui você sempre encontra novidades. A cada semana,
+                        adicionamos novas séries e filmes.</p>
+                </div>
+
+                <button onclick="ocultar('texto_02')">
+                    Quanto custa Netflix?
+                    <span> + </span>
+                </button>
+                <div class="texto_btn" id="texto_02">
+                    <p>Assista à Netflix no seu celular, tablet, Smart TV, notebook ou aparelho de streaming por uma
+                        taxa mensal única. Os planos variam de R$25,90 a R$55,90 por mês. Sem contrato nem taxas extras.
+                    </p>
+                </div>
+
+                <button onclick="ocultar('texto_03')">
+                    Onde posso assistir?
+                    <span> + </span>
+                </button>
+                <div class="texto_btn" id="texto_03">
+                    <p>Assista onde quiser, quando quiser. Faça login com sua conta Netflix em netflix.com para começar
+                        a assistir no computador ou em qualquer aparelho conectado à Internet compatível com o
+                        aplicativo Netflix, como Smart TVs, smartphones, tablets, aparelhos de streaming e videogames.
+                    </p>
+                    </br>
+                    <p>Você também pode baixar a sua série favorita com o aplicativo Netflix para iOS, Android ou
+                        Windows 10. Use downloads para levar a Netflix para onde quiser sem precisar de conexão com a
+                        Internet. Leve a Netflix com você para qualquer lugar.</p>
+                </div>
+
+                <button onclick="ocultar('texto_04')">
+                    Como faço para cancelar?
+                    <span> + </span>
+                </button>
+                <div class="texto_btn" id="texto_04">
+                    <p>A Netflix é flexível. Não há contratos nem compromissos. Você pode cancelar a sua conta na
+                        internet com apenas dois cliques. Não há taxa de cancelamento – você pode começar ou encerrar a
+                        sua assinatura a qualquer momento.</p>
+                </div>
+
+                <button onclick="ocultar('texto_05')">
+                    O que eu posso assistir na Netflix?
+                    <span> + </span>
+                </button>
+                <div class="texto_btn" id="texto_05">
+                    <p>A Netflix tem um grande catálogo de filmes, documentários, séries, originais Netflix premiados e
+                        muito mais. Assista o quanto quiser, quando quiser.</p>
+                </div>
+
+
+                <button onclick="ocultar('texto_06')">
+                    A Netflix é adequada para crianças?
+                    <span> + </span>
+                </button>
+                <div class="texto_btn" id="texto_06">
+                    <p>A experiência infantil da Netflix faz parte da sua assinatura para que as crianças se divirtam em
+                        seu próprio espaço com séries e filmes familiares sob a supervisão dos pais.</p>
+                    </br>
+                    <p>O recurso de controle dos pais, incluso nos perfis para crianças e protegido por PIN, permite
+                        restringir a classificação etária do conteúdo que as crianças podem ver e bloquear títulos
+                        específicos que você não quer que elas assistam.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contatos">
+            <button>
+                <img src="./img/footer/github.png" alt="icone do github">
+            </button>
+            <button>
+                <img src="./img/footer/instagram.png" alt="icone do instagram">
+            </button>
+            <button>
+                <img src="./img/footer/twitter.png" alt="icone do twitter">
+            </button>
+            <button>
+                <img src="./img/footer/whatsapp.png" alt="icone do whatsapp">
+            </button>
+            <button>
+                <img src="./img/footer/linkedin.png" alt="icone do linkedin">
+            </button>
+        </div>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/7565f2e855.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/owl/jquery.min.js"></script>
+    <script src="./js/owl/owl.carousel.min.js"></script>
+    <script src="./js/owl/setup.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            document.getElementById('texto_01').style.display = 'none';
+            document.getElementById('texto_02').style.display = 'none';
+            document.getElementById('texto_03').style.display = 'none';
+            document.getElementById('texto_04').style.display = 'none';
+            document.getElementById('texto_05').style.display = 'none';
+            document.getElementById('texto_06').style.display = 'none';
+        });
+
+        function ocultar(el) {
+            var display = document.getElementById(el).style.display;
+            if (display == "none")
+                document.getElementById(el).style.display = 'block';
+            else
+                document.getElementById(el).style.display = 'none';
+        }
+    </script>
+
 </body>
+
 </html>
